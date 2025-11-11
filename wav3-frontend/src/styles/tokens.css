@@ -1,0 +1,34 @@
+:root {
+    --spirit-width: 420px;
+    --spirit-max-width: 420px;
+    --body-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --bg-base: #071428;
+    --bg-accent: linear-gradient(180deg,#071428 0%, #0b2940 100%);
+    --text-core: #f7f6f3;
+    --muted: #9aa3a8;
+    --accent: #58c1ff;
+    --gold: #c9a24f;
+    --gap: 16px;
+    --transition-fast: 180ms;
+    --transition-medium: 320ms;
+    --transition-slow: 420ms;
+    --radius-soft: 12px;
+  }
+  
+  html { 
+    font-size: 16px; 
+    scroll-behavior: smooth;
+  }
+  
+  body { 
+    font-family: var(--body-font); 
+    color: var(--text-core); 
+    background: var(--bg-base);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }

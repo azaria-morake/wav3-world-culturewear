@@ -1,0 +1,57 @@
+.collectionsRow {
+    padding: 0 var(--gap);
+    margin-bottom: 48px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    font-weight: 300;
+    color: var(--text-core);
+  }
+  
+  .scrollContainer {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 8px 0 24px;
+  }
+  
+  .scrollContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    gap: var(--gap);
+    padding: 0 calc(50% - min(160px, 40vw));
+  }
+  
+  .fadeLeft,
+  .fadeRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .fadeLeft {
+    left: 0;
+    background: linear-gradient(90deg, var(--bg-base) 0%, transparent 100%);
+  }
+  
+  .fadeRight {
+    right: 0;
+    background: linear-gradient(270deg, var(--bg-base) 0%, transparent 100%);
+  }
+  
+  @media (max-width: 768px) {
+    .cardsContainer {
+      padding: 0 calc(50% - min(140px, 35vw));
+    }
+  }
